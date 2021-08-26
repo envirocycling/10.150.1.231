@@ -1,0 +1,16 @@
+<?php
+
+$_ = $_SERVER['_'];
+
+function onShutdown() {
+  global $_, $argv;
+  echo "I am restarting...\n";
+  exec($_, $argv);
+}
+
+register_shutdown_function(onShutdown) {
+  echo 'I am a php job';
+}
+
+
+?>

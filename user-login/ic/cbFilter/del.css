@@ -1,0 +1,22 @@
+#del_picker{
+    font-size:14px;
+    width:500px;
+}
+.ui-combobox4 {
+    position: relative;
+    display: inline-block;
+}
+.ui-combobox4-toggle4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+    /* adjust styles for IE 6/7 */
+    *height: 1.7em;
+    *top: 0.1em;
+}
+.ui-combobox4-input {
+    margin: 0;
+    padding: 0.3em;
+}

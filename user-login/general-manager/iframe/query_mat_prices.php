@@ -1,0 +1,58 @@
+
+<link rel="stylesheet" type="text/css" href="../css/layout.css" media="screen" />
+<script src="../js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/jquery.ui.core.min.js"></script>
+<script src="../js/setup.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        setupLeftMenu();
+        $('.datatable').dataTable();
+        setSidebarHeight();
+    });
+</script>
+<style>
+    #example{
+        border-width:50%;
+        font-size: 13px;
+    }
+
+</style>
+<link href="../src/facebox_2.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="../src/facebox.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('a[rel*=facebox]').facebox({
+            loadingImage: '../src/loading.gif',
+            closeImage: '../src/closelabel.png'
+        })
+    })
+</script>
+<?php
+include 'config.php';
+echo '<table class="data display datatable" id="example">
+<thead>
+<tr class="data">
+            <th class="data" width="20">ID</th>
+            <th class="data">Date Added</th>
+            <th class="data">Material</th>
+            <th class="data">Details</th>
+            <th class="data">Price</th>
+            <th class="data">Action</th>';
+echo '</tr>
+</thead>';
+$sql_mat = mysql_query("SELECT * FROM material WHERE status!='deleted'");
+while ($rs_mat = mysql_fetch_array($sql_mat)) {
+    $sql_price = mysql_query("SELECT * FROM default_price WHERE material_id='".$rs_mat['material_id']."'");
+    $rs_price = mysql_fetch_array($sql_price);
+    echo "<tr class='
+    data'>";
+    echo "<td class='data'>" . $rs_mat['material_id'] . "</td>";
+    echo "<td class='data'>" . $rs_mat['date_added'] . "</td>";
+    echo "<td class='data'>" . $rs_mat['code'] . "</td>";
+    echo "<td class='data'>" . $rs_mat['details'] . "</td>";
+    echo "<td class='data'>" . $rs_price['price'] . "</td>";
+    echo "<td class='data'><a rel='facebox' href='../mat_price_edit.php?material_id=" . $rs_mat['material_id'] . "'><button>Edit</button></a></td>";
+    echo "</tr>";
+}
+echo "</table>";
+?>

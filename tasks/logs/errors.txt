@@ -1,0 +1,6 @@
+2020-08-17 03:56:52 -> Status Code: 404 -> POST -> http://api.ims.efi.net.ph/api/sales.php
+2020-08-17 03:59:40 -> Status Code: 500 -> POST -> http://api.ims.efi.net.ph/api/sales
+2020-08-17 04:09:06 -> Status Code: 500 -> POST -> http://api.ims.efi.net.ph/api/sales
+2020-08-17 04:14:09 -> Status Code: 500 -> POST -> http://api.ims.efi.net.ph/api/sales
+2020-08-17 04:18:32 -> Status Code: 500 -> POST -> http://api.ims.efi.net.ph/api/sales
+2020-08-29 10:16:59 -> POST -> http://api.ims.efi.net.ph/api/sales -> Couldn't resolve host 'api.ims.efi.net.ph'

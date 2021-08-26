@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+body {
+    margin-top: 10px;
+    font: 12px/18px Arial, sans-serif;
+    background-image: url('../images/bgbg.png');
+}
+.wrapper {
+    min-width: 1000px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    color: white;
+    height: 100px;
+    background-image: url('../images/header.png');
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* Header Middle
+-----------------------------------------------------------------------------*/
+.header_middle {
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+}
+.header_middle:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.header_container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.header_content {
+    height: 40px;
+    font-size: 50px;
+    padding-left: 160px;
+    text-align: inherit;
+    margin-top: 40px;
+}
+
+
+/* Header Left Sidebar
+-----------------------------------------------------------------------------*/
+.header_left-sidebar {
+    float: left;
+    width: 150px;
+    margin-left: -100%;
+    position: relative;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+.middle:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.content {
+    padding: 0 0 0 380px;
+}
+
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+    float: left;
+    width: 360px;
+    margin-left: -100%;
+    position: relative;
+    background: #B5E3FF;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    height: 70px;
+    color: white;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    text-align: right;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    background-image: url('../images/footer.png');    
+}
+
+
+/* Pending
+-----------------------------------------------------------------------------*/
+.refresh {
+    border: 1px solid black;
+    border-left: 1px solid black;
+    /*color: black;*/
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    height: 640px;
+    overflow: auto;
+    width: 350px;
+    padding:10px;
+    background-color:#FFFFFF;
+}

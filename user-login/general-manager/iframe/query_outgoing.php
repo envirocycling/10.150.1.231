@@ -1,0 +1,76 @@
+
+<link rel="stylesheet" type="text/css" href="../css/layout.css" media="screen" />
+<script src="../js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/jquery.ui.core.min.js"></script>
+<script src="../js/setup.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        setupLeftMenu();
+        $('.datatable').dataTable();
+        setSidebarHeight();
+    });
+</script>
+<script>
+    function openWindow(str) {
+        window.open("../view_out_trans_details.php?trans_id=" + str, 'mywindow', 'width=900,height=500,left=180,top=20');
+    }
+</script>
+<style>
+    #example{
+        border-width:50%;
+        font-size: 13px;
+    }
+    .submitq {
+        height: 20px;
+        width: 60px;
+    }
+    .total {
+        background-color: yellow;
+        font-weight: bold;
+    }
+</style>
+<link href="../src/facebox_2.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="../src/facebox.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('a[rel*=facebox]').facebox({
+            loadingImage: '../src/loading.gif',
+            closeImage: '../src/closelabel.png'
+        })
+    })
+</script>
+<base target="_parent" />
+<?php
+include '../config.php';
+$total_weight = 0;
+$total_less_weight = 0;
+$corrected_weight = 0;
+echo '<table class="data display datatable" id="example">
+<thead>
+<tr class="data">
+            <th class="data" width="40">Date</th>
+            <th class="data" width="80">STR #</th>
+            <th class="data" width="80">Supplier Name</th>
+            <th class="data">Plate #</th>            
+            <th class="data">Delivered To</th>
+            <th class="data">Branch</th>
+            <th class="data">Action</th>
+        </tr>
+        </thead>';
+$sql_rec = mysql_query("SELECT * FROM scale_outgoing WHERE branch_id!='7' and status!='void' and date>='" . $_GET['from'] . "' and date<='" . $_GET['to'] . "'");
+while ($rs_rec = mysql_fetch_array($sql_rec)) {
+    $sql_sup = mysql_query("SELECT * FROM supplier WHERE id='" . $rs_rec['supplier_id'] . "'");
+    $rs_sup = mysql_fetch_array($sql_sup);
+    $sql_dt = mysql_query("SELECT * FROM delivered_to WHERE dt_id='" . $rs_rec['dt_id'] . "'");
+    $rs_dt = mysql_fetch_array($sql_dt);
+    echo "<tr class='data'>";
+    echo "<td class='data'>" . $rs_rec['date'] . "</td>";
+    echo "<td class='data'>" . $rs_rec['str_no'] . "</td>";
+    echo "<td class='data'>" . $rs_sup['supplier_id'] . "_" . strtoupper($rs_sup['supplier_name']) . "</td>";
+    echo "<td class='data'>" . strtoupper($rs_rec['plate_number']) . "</td>";
+    echo "<td class='data'>" . strtoupper($rs_dt['name']) . "</td>";
+    echo "<td class='data'>" . strtoupper($rs_sup['branch']) . "</td>";
+    echo "<td class='data'><button class='submitq' id='" . $rs_rec['trans_id'] . "' onclick='openWindow(this.id);' class='button'>View</button></td>";
+    echo "</tr>";
+}
+?>

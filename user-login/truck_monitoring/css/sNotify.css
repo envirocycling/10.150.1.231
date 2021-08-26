@@ -1,0 +1,36 @@
+.sNotify_message {
+margin-top:-68px;
+    width: 340px;
+    padding: 20px;
+    background-color: gray;
+    position: absolute;
+    display: none;
+    left: 900px;
+    top: 445px;
+    margin-bottom: 20px;
+    text-align: left;
+    border: 2px solid #808080;
+    color:white;
+font-size:15px;
+z-index:1;
+}
+
+.sNotify_close {
+    display: block;
+ background-color:black;
+    padding: 3px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    color: white;
+    font-weight: bold;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 10px;
+
+}
+.sNotify_close:after {
+content:"x";
+}

@@ -1,0 +1,13 @@
+<?php
+$con = mysql_connect("10.151.16.171", "5net", "R3strlckt3d");
+if (!$con) {
+    die('Could not connect: ' . mysql_error());
+}
+mysql_select_db("efi_pamp", $con);
+
+$conn = mysqli_connect('10.151.16.171', '5net', 'R3strlckt3d', 'efi_pamp');
+if (!$conn) {
+    trigger_error('mysqli Connection failed! ' . htmlspecialchars(mysqli_connect_error()), E_USER_ERROR);
+}
+mysqli_set_charset($conn, "utf8");
+?>

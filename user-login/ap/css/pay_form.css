@@ -1,0 +1,111 @@
+/* input */
+
+.medium-input-money{
+    text-align: right;
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.medium-input-2{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 25px;
+    width: 320px;
+    font-size: 15px;
+}
+.medium-input-3{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    font-size: 15px;
+}
+.medium-input-4{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 25px;
+    width: 550px;
+    font-size: 15px;
+}
+
+.medium-input{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 25px;
+    width: 100px;
+    font-size: 15px;
+}
+
+/* select */
+
+.medium-select{
+    border-radius: 4px;
+    height: 30px;
+    width: 180px;
+    font-size: 18px;
+}
+
+.medium-select-2{
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
+}
+
+/* tcal */
+.tcal{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    font-size: 15px;
+}
+
+/* Submit */
+
+.large-submit{
+    border-radius: 4px;
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+}
+
+.small-submit{
+    border-radius: 4px;
+    height: 25px;
+    width: 80px;
+    font-size: 15px;
+}
+
+/* Radio */
+
+.large-radio{
+    height: 20px;
+    width: 20px;
+}
+
+/* textarea */
+
+.medium-textarea{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 50px;
+    width: 250px;
+    font-size: 15px;
+}
+.medium-textarea-2{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 50px;
+    width: 520px;
+    font-size: 15px;
+}
+
+.submit{
+    height: 20px;
+    width: 70px;
+}
+

@@ -1,0 +1,158 @@
+/* Select */
+
+.select2{
+    font-size: 18px;
+    width: 250px;
+    text-transform: uppercase;
+
+}
+
+.large-select{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 35px;
+    width: 250px;
+    font-size: 20px;
+}
+
+.medium-select{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 180px;
+    font-size: 18px;
+}
+.medium-select-3{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 350px;
+    font-size: 18px;
+}
+.medium-select-2{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
+}
+
+.small-select{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 70px;
+    font-size: 20px;
+}
+
+/* End Select*/
+
+
+/* Input*/
+
+.large-input{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    font-size: 20px;
+}
+.medium-input{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 180px;
+    font-size: 18px;
+}
+.small-input{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 30px;
+    width: 60px;
+    font-size: 20px;
+}
+
+/* End Input*/
+
+
+/* Submit */
+
+.large-submit{
+    border-radius: 4px;
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+}
+.large-submit2{
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+}
+
+.small-submit{
+    border-radius: 4px;
+    height: 25px;
+    width: 80px;
+    font-size: 15px;
+}
+
+/* End Submit */
+
+
+/* Radio */
+
+.large-radio{
+    height: 20px;
+    width: 20px;
+}
+
+/* End Radio */
+/*.table{
+    font-size: 20px;
+}*/
+
+/* Textarea */
+.large-textarea{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 60px;
+    width: 600px;
+    font-size: 15px;
+}
+
+.medium-textarea{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 50px;
+    width: 250px;
+    font-size: 15px;
+}
+
+.medium-textarea-2{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 50px;
+    width: 520px;
+    font-size: 15px;
+}
+
+.medium-textarea-2-1{
+    border-radius: 4px;
+    height: 50px;
+    width: 520px;
+    font-size: 15px;
+}
+.medium-textarea-3{
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 50px;
+    width: 570px;
+    font-size: 15px;
+}
+/* Error */
+.error{
+    font-size: 15px;
+    padding-left: 10px;
+    color: red;
+}

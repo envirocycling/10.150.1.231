@@ -1,0 +1,166 @@
+/*
+        960 Grid System ~ Text CSS.
+        Learn more ~ http://960.gs/
+
+        Licensed under GPL and MIT.
+*/
+
+/* =Basic HTML
+--------------------------------------------------------------------------------*/
+
+body
+{
+    font: 12px/15px Arial, sans-serif;
+}
+
+a:focus
+{
+    outline: 1px dotted invert;
+}
+
+hr
+{
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px 0 0;
+    clear: both;
+    height: 0;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+*/
+table.display {
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+
+
+    /* Note Firefox 3.5 and before have a bug with border-collapse
+         * ( https://bugzilla.mozilla.org/show%5Fbug.cgi?id=155955 )
+         * border-spacing: 0; is one possible option. Conditional-css.com is
+         * useful for this kind of thing
+         *
+         * Further note IE 6/7 has problems when calculating widths with border width.
+         * It subtracts one px relative to the other browsers from the first column, and
+         * adds one to the end...
+         *
+         * If you want that effect I'd suggest setting a border-top/left on th/td's and
+         * then filling in the gaps with other borders.
+         */
+}
+
+table.display th{ /* background:#8f8f8f;   */ }
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+*/
+
+
+.sorting_asc {
+    background-image: #8f8f8f url(../images/table/sort_asc.png) no-repeat center right; padding:8px 5px; text-align:left; color:#fff;
+}
+
+.sorting_desc {
+    background: #8f8f8f url(../images/table/sort_desc.png) no-repeat center right; padding:8px 5px; text-align:left; color:#fff;
+}
+
+.sorting {
+    background:#8f8f8f   url(../images/table/sort_both.png) no-repeat center right; padding:8px 5px; text-align:left; color:#fff;
+}
+
+.sorting_asc_disabled {
+    background: #8f8f8f url(../images/table/sort_asc_disabled.png) no-repeat center right; padding:8px 5px; text-align:left; color:#fff;
+}
+
+.sorting_desc_disabled {
+    background: #8f8f8f url(../images/table/sort_desc_disabled.png) no-repeat center right; padding:8px 5px; text-align:left; color:#fff;
+}
+
+
+
+
+tr.odd {
+    height: 30px;
+    line-height: 30px; border-bottom:1px solid #e6e6e6;
+
+}
+
+tr.even {
+    height: 30px;
+    line-height: 30px; border-bottom:1px solid #e6e6e6;
+}
+tr.odd:hover, tr.even:hover { background:#f6f6f6; }
+tr.odd td, tr.even td{
+
+    border-width:thin;
+    padding-left:5px; }
+
+
+
+.clear {
+    clear: both;
+}
+
+.dataTables_empty {
+    text-align: center;
+}
+
+tfoot { display: none; }
+tfoot input {
+    margin: 0.5em 0;
+    width: 100%;
+    color: #444;
+}
+
+tfoot input.search_init {
+    color: #999;
+}
+
+td.group {
+    background-color: #d1cfd0;
+    border-bottom: 2px solid #A19B9E;
+    border-top: 2px solid #A19B9E;
+}
+
+td.details {
+    background-color: #d1cfd0;
+    border: 2px solid #A19B9E;
+}
+
+
+.example_alt_pagination div.dataTables_info {
+    width: 40%;
+}
+
+.paging_full_numbers {
+    width: 400px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.paging_full_numbers span.paginate_button,
+.paging_full_numbers span.paginate_active {
+    border: 1px solid #aaa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 2px 5px;
+    margin: 0 3px;
+    cursor: pointer;
+    *cursor: hand;
+}
+
+.paging_full_numbers span.paginate_button {
+    background-color: #ddd;
+}
+
+.paging_full_numbers span.paginate_button:hover {
+    background-color: #ccc;
+}
+
+.paging_full_numbers span.paginate_active {
+    background-color: #99B3FF;
+}
+
+
